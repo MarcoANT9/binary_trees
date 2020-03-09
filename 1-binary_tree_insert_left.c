@@ -8,10 +8,9 @@
  * @value: Value to insert into the new node.
  *
  * Description: This program takes a node from a binary tree and adds a new
- *              left
- *              node to it with its respective value; if the current node has
- *              already a left child, it will be replaced by the new one and
- *              assigned as its child node.
+ *              left node to it with its respective value; if the current node
+ *              has already a left child, it will be replaced by the new one
+ *              and assigned as its child node.
  *
  *
  * Return: → Pointer to the created Node on success.
