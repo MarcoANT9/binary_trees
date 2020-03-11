@@ -1,7 +1,5 @@
 #include "binary_trees.h"
 
-void print_num(int n);
-
 /**
  * binary_tree_preorder - Traverses a binary tree using pre-order traversal.
  *
@@ -15,17 +13,18 @@ void print_num(int n);
  * Return: Nothing (Void).
  *
  */
+
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL)
+	if (tree == NULL || *func == NULL)
 		return;
 
 	func(tree->n);
 
 	if (tree->left != NULL)
-		binary_tree_preorder(tree->left, &print_num);
+		binary_tree_preorder(tree->left, func);
 
 	if (tree->right != NULL)
-		binary_tree_preorder(tree->right, &print_num);
+		binary_tree_preorder(tree->right, func);
 
 }

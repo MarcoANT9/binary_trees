@@ -1,7 +1,5 @@
 #include "binary_trees.h"
 
-void print_num(int n);
-
 /**
  * binary_tree_inorder - Traverses a binary tree in-order.
  *
@@ -21,11 +19,11 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 		return;
 
 	if (tree->left != NULL)
-		binary_tree_inorder(tree->left, &print_num);
+		binary_tree_inorder(tree->left, func);
 
 	func(tree->n);
 
 	if (tree->right != NULL)
-		binary_tree_inorder(tree->right, &print_num);
+		binary_tree_inorder(tree->right, func);
 
 }
