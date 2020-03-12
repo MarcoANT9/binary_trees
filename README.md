@@ -1,6 +1,4 @@
 # Binary Trees
-![enter image description here](https://www.researchgate.net/profile/Tao_Schardl/publication/276399026/figure/fig1/AS:504636827869184@1497326203853/The-complete-binary-tree-CBT-4-of-heig    ht-4.png)
-
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.
 In this repository you will find some exercises to de use of a binary tree in c languaje
 #### 0 - New node ([0-binary_tree_node.c](https://github.com/MarcoANT9/binary_trees/blob/master/0-binary_tree_node.c "0-binary_tree_node.c"))
